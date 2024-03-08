@@ -4,7 +4,8 @@
 import xlwings as xw
 
 # Abrir uma pasta de trabalho
-wb = xw.Book('02_02_Notas.xlsx')
+wb = xw.Book(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\02_02_Notas.xlsx')
 
 # Criar uma workbook nova
 wbNovo = xw.Book()
@@ -13,7 +14,7 @@ wbNovo = xw.Book()
 wbNovo.sheets(1).range("A1").value = 'Módulo 2 - Aula 02 - Excel x Python'
 
 # Salvar a pasta de trabalho
-wbNovo.save('02_02_wbNovo.xlsx')
+wbNovo.save(r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\02_02_wbNovo.xlsx')
 wbNovo.close()
 
 # Exibir nome da planilha 1

@@ -27,5 +27,5 @@ ws.range("A4:D4").value = Titulos
 ws.range("A5:D7").value = Itens
 ws.used_range.autofit()
 
-wb.save(r'c:\temp\02_03_ManipularPlanilhas.xlsx')
+wb.save(r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\02_03_ManipularPlanilhas.xlsx')
 wb.close()
