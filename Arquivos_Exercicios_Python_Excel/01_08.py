@@ -2,19 +2,20 @@
 
 import pandas as pd
 
-df = pd.read_excel('01_06_Notas.xlsx')
+df = pd.read_excel(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\01_08_Notas.xlsx')
 # print(df)
 
 # SORT_VALUES
 
 # Classificar valores do DataFrame em ordem decrescente
 print(df.sort_values(by=['NOTA'], ascending=False))
+# CUIDADO! O by= É CASE SENSITIVE
 
 # Classificar valores do DataFrame em ordem crescente
 print(df.sort_values(by=['NOTA'], ascending=True))
 
 # SORT_INDEX
-
 print(df.sort_index(ascending=False))
 
 # Transposição do Dataframe

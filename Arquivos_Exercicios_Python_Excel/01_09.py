@@ -2,7 +2,8 @@
 
 import pandas as pd
 
-df = pd.read_excel('01_09_Produtos.xlsx')
+df = pd.read_excel(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\01_09_Produtos.xlsx')
 print(df)
 
 # Filtrar uma coluna
@@ -15,8 +16,8 @@ print(df['PRODUTO'] == 'Produto 18')
 lista_filtro = ['Produto 1', 'Produto 10', 'Produto 15']
 print(df.loc[df['PRODUTO'].isin(lista_filtro)])
 
-# Filtrar duas linhas
-print(df[1:3])
+# Filtrar três linhas
+print(df[0:3])
 
 filtro = df['TOTAL'] > 500
 print(df[filtro])

@@ -7,7 +7,8 @@
 
 import pandas as pd
 
-#dados_csv = pd.read_csv(filepath_or_buffer='01_07_CSV.csv', sep=';',  encoding='utf8')
+dados_csv = pd.read_csv(
+    filepath_or_buffer='C:/Users/85189741/Documents/GitHub/pythonPandasLinkedin/Arquivos_Exercicios_Python_Excel/01_07_CSV.csv', sep=';',  encoding='utf8')
 
 print(dados_csv)
 
