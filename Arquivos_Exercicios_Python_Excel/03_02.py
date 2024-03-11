@@ -8,7 +8,8 @@ x = [1, 2, 3, 4]
 y = [1, 4, 9, 5]
 
 plt.bar(x, y)  # Variações barh, pie, boxplot
-
+plt.barh(x, y)
+plt.pie(y)
 plt.show()
 
 plt.xlabel('Eixo X')

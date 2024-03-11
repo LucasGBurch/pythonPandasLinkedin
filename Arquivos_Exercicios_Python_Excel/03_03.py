@@ -17,7 +17,7 @@ plt.title('Python x Excel - Exemplo')
 plt.bar(x, y)
 
 plt.show()
-exit()
+# exit()
 
 # Transfere o gráfico para o Excel
 

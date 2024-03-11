@@ -3,7 +3,8 @@
 import pandas as pd
 import xlwings as xw
 
-wb = xw.Book('04_01_Notas.xlsm')
+wb = xw.Book(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\04_01_Notas.xlsm')
 ws = wb.sheets(1)
 ln = 1
 col = 4
@@ -25,6 +26,6 @@ for value in df['NOTA']:
 df['RESULTADO'] = resultado
 
 ws.range("D1").value = df['RESULTADO']
-ws.range("D:D").delete()
+# ws.range("D:E").delete()
 
 # wb.close()

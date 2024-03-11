@@ -6,7 +6,8 @@ import tempfile
 import segno
 import xlwings as xw
 
-wb = xw.Book('04_02_QRCode.xlsx')
+wb = xw.Book(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\04_02_QRCode.xlsx')
 ws = xw.sheets[0]
 
 rng = ws['A1']

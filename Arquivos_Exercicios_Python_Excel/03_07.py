@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import xlwings as xw
 import pandas as pd
 
-wb = xw.Book('03_07_Notas.xlsm')
+wb = xw.Book(
+    r'C:\Users\85189741\Documents\GitHub\pythonPandasLinkedin\Arquivos_Exercicios_Python_Excel\03_07_Notas.xlsm')
 ws = wb.sheets(1)
 
 ultcel = ws.used_range.last_cell.row
